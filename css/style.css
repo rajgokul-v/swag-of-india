@@ -78,7 +78,7 @@ body {
     display: flex;
   }
 
-  nav .coutry-wrapper .flog img{
+  nav .coutry-wrapper .flag img{
      height: 30px;
      width: 30px; 
      border-radius:50%;
@@ -251,8 +251,7 @@ footer ul li:nth-child(1){
   top: 30rem;
 }
 
-<<<<<<< Updated upstream
-=======
+
 .show{
   visibility: visible;
 }
@@ -437,7 +436,6 @@ border-radius: 5px;
   margin-top: 20px;
 
 }
->>>>>>> Stashed changes
 
 
 
