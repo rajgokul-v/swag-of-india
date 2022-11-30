@@ -8,10 +8,10 @@ fetch('/footer.html')
 .then(response => response.text())
 .then(function (footerHtml) {
 $('#main-footer').html(footerHtml);
-fetch('/product.html')
+fetch('/product-view.html')
 .then(response => response.text())
-.then(function (productHtml) {
-$('#main-container').html(productHtml);
+.then(function (productViewHtml) {
+$('#main-container').html(productViewHtml);
 });
 });
 });

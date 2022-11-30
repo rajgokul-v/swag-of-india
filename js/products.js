@@ -57,10 +57,22 @@
 	]
 }
 
-let all = document.querySelector('#all')
+let all = document.querySelector('#productListArea')
 all.innerText = ' '
 Products.forEach((product) => {
-	var img = document.createElement('img')
-	img.src = product.imageName
-	all.appendChild(img).classList.add('card')
-})
+ let htmltoreturn ='<div class="card col-xl-2 col-lg-2 col-lg-md-4 m-3">'+
+'<img src="'+product.imageName+'" class="card-img-top" alt="product">'+
+'<div class="card-body">'+
+  '<h4 class="card-text">Dummy Text Lorel</h4>'+
+  '<h6>Rs 1099.0<span style="color: orange;">(60% off)</span></h6>'+
+  '<ul>'+
+    '<li><i class="bx bxs-star" ></i></li>'+
+    '<li><i class="bx bxs-star" ></i></li>'+
+    '<li><i class="bx bxs-star" ></i></li>'+
+    '<li><i class="bx bxs-star" ></i></li>'+
+    '<li><i class="bx bxs-star-half" ></i></li>'+
+  '</ul>'+
+'</div>'+
+'</div>'
+document.getElementById("productListArea").innerHTML +=htmltoreturn
+});
