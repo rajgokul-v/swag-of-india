@@ -57,12 +57,10 @@
 	]
 }
 
-let ul = document.querySelector('#todoList')
-ul.innerText = ' '
+let all = document.querySelector('#all')
+all.innerText = ' '
 Products.forEach((product) => {
 	var img = document.createElement('img')
 	img.src = product.imageName
-	document.write(`<p>${product.name}</p>`)
-
-	ul.appendChild(img).classList.add('card')
+	all.appendChild(img).classList.add('card')
 })
