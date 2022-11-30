@@ -220,12 +220,13 @@ body {
 
 .container .btn-1{
   margin-left: 25rem;
+  border: 1px solid rgb(124, 114, 114);
   margin-top: 20px;
+  width: 8rem;
 }
 
 .container button:hover{
   background: none;
-  border: 1px solid black;
   color: orange;
 }
 
