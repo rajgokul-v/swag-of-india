@@ -335,29 +335,39 @@ body {
   display: flex;
   position: absolute;
   top: 8rem;
-  left: 5rem;
+  left: 3rem;
 }
 
 
 #product-hover img{
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
+  opacity: .5;
 }
 
-#product-hover-new {
-  display: flex;
-  position: absolute;
-  top: 8rem;
-  left: 5rem;
+#icon1:hover{
+  background-image: url(./../images/wishlist-new.png);
+  background-size: cover;
 }
 
-#product-hover-new img{
-  height: 50px;
-  width: 50px;
+#icon2:hover{
+  background-image: url(./../images/view-new.png);
+  background-size: cover;
+}
+
+#icon3:hover{
+  background-image: url(./../images/cart-new.png);
+  background-size: cover;
 }
 
 .card-text{
   text-align: center;
+  
+}
+
+.card-text del {
+  color: red;
+  margin: 0px 5px 0px 5px;
 }
 
 .card-text:hover{
@@ -719,6 +729,10 @@ border-radius: 5px;
   margin-top: 30px;
   position: relative;
 }
+
+.total-item select{
+  margin-left: 39rem;
+}
 .productlist nav ol{
   margin-left: 10rem;
   line-height: 40px;
@@ -730,11 +744,18 @@ border-radius: 5px;
 }
 
 .productlist aside .flex-column{
+  width: 100vw;
   margin-top: 40px;
 }
 .productlist aside .flex-column a{
   color: black;
+  font-weight: 600;
 }
+
+.productlist aside .flex-column input{
+  margin-left: 15px;
+}
+
 
 .productlist aside .flex-column a:hover{
   color: rgb(202, 182, 182);

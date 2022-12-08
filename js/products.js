@@ -130,15 +130,16 @@ Products.forEach((product) => {
 	if (product.isNew == 'TRUE') htmltoreturn += isNew
 	isNew = ''
 	htmltoreturn +=
-		'<div id="product-hover" class="over-hide">' +
-		'<img id="icon1" src="./images/wishlist.png" alt="wishlist">' +
-		'<img id="icon2" src="./images/view.png" alt="wishlist">' +
-		'<img id="icon3" src="./images/cart.png" alt="wishlist">' +
+		'<div id="product-hover">' +
+		'<div id="icon1">' +
+		'<img  src="./images/wishlist.png" alt="wishlist">' +
 		'</div>' +
-		'<div id="product-hover-new" class="over-hide">' +
-		'<img id="icon4" src="./images/wishlist-new.png" alt="wishlist">' +
-		'<img id="icon5" src="./images/view-new.png" alt="wishlist">' +
-		'<img id="icon6" src="./images/cart-new.png" alt="wishlist">' +
+		'<div id="icon2">' +
+		'<img  src="./images/view.png" alt="wishlist">' +
+		'</div>' +
+		'<div id="icon3">' +
+		'<img  src="./images/cart.png" alt="wishlist">' +
+		'</div>' +
 		'</div>' +
 		'<div class="card-body">' +
 		'<h6 class="card-text">' +
@@ -172,17 +173,10 @@ document.querySelectorAll('#product-hover').forEach((p) => {
 	p.classList.add('hide')
 })
 
-document.querySelectorAll('#product-hover-new').forEach((p) => {
-	p.classList.add('hide')
-})
-
 document.querySelectorAll('div[class^="card"]').forEach((p) => {
 	p.addEventListener('mouseover', (e) => {
 		p.querySelector('.img-over').classList.add('blur')
 		p.querySelector('#product-hover').classList.remove('hide')
-		p.querySelector('#product-hover').addEventListener('mouseover', (e) => {
-			p.querySelector('')
-		})
 	})
 })
 
@@ -192,31 +186,4 @@ document.querySelectorAll('div[class^="card"]').forEach((p) => {
 		p.querySelector('#product-hover').classList.remove('show')
 		p.querySelector('#product-hover').classList.add('hide')
 	})
-})
-
-document.querySelectorAll('#icon1').addEventListener('mouseover', (e) => {
-	document.querySelectorAll('#icon4').classList.add('show')
-})
-
-document.querySelectorAll('#icon2').addEventListener('mouseover', (e) => {
-	document.querySelectorAll('#icon5').classList.add('show')
-})
-
-document.querySelectorAll('#icon3').addEventListener('mouseover', (e) => {
-	document.querySelectorAll('#icon6').classList.add('show')
-})
-
-document.querySelectorAll('#icon1').addEventListener('mouseout', (e) => {
-	document.querySelectorAll('#icon4').classList.add('hide')
-	document.querySelectorAll('#icon4').classList.remove('show')
-})
-
-document.querySelectorAll('#icon2').addEventListener('mouseout', (e) => {
-	document.querySelectorAll('#icon5').classList.add('hide')
-	document.querySelectorAll('#icon5').classList.remove('show')
-})
-
-document.querySelectorAll('#icon3').addEventListener('mouseout', (e) => {
-	document.querySelectorAll('#icon6').classList.add('hide')
-	document.querySelectorAll('#icon6').classList.remove('show')
 })
